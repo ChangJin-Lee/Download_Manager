@@ -66,6 +66,13 @@ Google Earth Pro, Capella open-data-set의 영상 데이터 다운로드를 자�
 <img src="https://user-images.githubusercontent.com/54494793/186603080-92ff8d4a-0a00-4d1b-a48a-18a519c04ca9.png" width="50%" height="50%" style="border-radius:5%;">
 </div>
 
+<table>
+  <tr>
+    <td><img alt="" src="https://user-images.githubusercontent.com/54494793/186603080-92ff8d4a-0a00-4d1b-a48a-18a519c04ca9.png" /></td><td><img alt="" src="https://user-images.githubusercontent.com/54494793/186603447-02d5276f-f805-4606-9865-c2656edd3f79.png" /></td><td><img alt="" src="https://user-images.githubusercontent.com/54494793/186603459-e7b7d19b-7805-45e2-babd-5b77e9cf6e45.png" /></td>
+  <tr>
+</table>
+
+
 <div align="center">
 <img src="https://user-images.githubusercontent.com/54494793/186603447-02d5276f-f805-4606-9865-c2656edd3f79.png" width="50%" height="50%" style="border-radius:5%;">
 <img src="https://user-images.githubusercontent.com/54494793/186603459-e7b7d19b-7805-45e2-babd-5b77e9cf6e45.png" width="50%" height="50%" style="border-radius:5%;">
