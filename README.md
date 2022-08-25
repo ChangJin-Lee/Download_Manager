@@ -62,7 +62,9 @@ Google Earth Pro, Capella open-data-set의 영상 데이터 다운로드를 자�
         └── cron.sh
 ```
 
-사진 붙이기
+<div align="center">
+<img src="https://user-images.githubusercontent.com/54494793/186603080-92ff8d4a-0a00-4d1b-a48a-18a519c04ca9.png" width="100%" height="100%" style="border-radius:5%;">
+</div>
 
 <br/>
 
