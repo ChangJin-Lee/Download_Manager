@@ -61,5 +61,5 @@ Google Earth Pro, Capella open-data-set의 영상 데이터 다운로드를 자�
 ### How to run to cron?
 | Parameter          | Format                          |
 |----------------------|--------------------------------------------------------|
-| cron expression              | * * * * *                              |
+| cron expression       | * * * * *                 |
 | DIRECTORY             | /write/your/path          |
