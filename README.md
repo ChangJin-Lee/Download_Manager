@@ -31,6 +31,11 @@ Google Earth Pro, Capella open-data-set의 영상 데이터 다운로드를 자�
 
 <br/>
 
+### Precautions
+- you must run this prgram after all jobs done.
+- In GEP Downloader Page, you need to asure that DateTime is valid. if DateTime not valid, maybe this program will download wrong file that has DateTime.
+- if Capella CronJob page show error message something like "download failed...", you must check ./Capella_Cron/aws_s3_log.txt first. then execute ./ShellScripts/cron.sh manually.
+
 ## How to Run?
 
 > you need to run this program at specific local computer
@@ -66,6 +71,9 @@ Google Earth Pro, Capella open-data-set의 영상 데이터 다운로드를 자�
     <td><img alt="" src="https://user-images.githubusercontent.com/54494793/186603080-92ff8d4a-0a00-4d1b-a48a-18a519c04ca9.png" /></td><td><img alt="" src="https://user-images.githubusercontent.com/54494793/186603447-02d5276f-f805-4606-9865-c2656edd3f79.png" /></td><td><img alt="" src="https://user-images.githubusercontent.com/54494793/186603459-e7b7d19b-7805-45e2-babd-5b77e9cf6e45.png" /></td>
   <tr>
 </table>
+
+
+
 
 <br/>
 
