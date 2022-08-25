@@ -1,3 +1,4 @@
 playground/
 json/
 *.pycdasd
+__pycache__/*

@@ -27,7 +27,7 @@ Google Earth Pro, Capella open-data-set의 영상 데이터 다운로드를 자�
 
 1. Execute ananconda
 
-2 Environments -> GEP -> Open terminal
+2. Environments -> GEP -> Open terminal
 
 3. Run command in terminal
 ```
@@ -48,8 +48,8 @@ Google Earth Pro, Capella open-data-set의 영상 데이터 다운로드를 자�
     └── GEP_Downloader
         ├── download_base.py
         └── gep_downloader.py
-    └── cron.sh
-    └── directory.sh
+    └── ShellScripts
+        └── cron.sh
 ```
 
 사진 붙이기

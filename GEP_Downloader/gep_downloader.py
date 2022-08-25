@@ -1,8 +1,6 @@
 import streamlit as st
 import json
-
 from GEP_Downloader.download_base import Base, ToomanyNotFound, ToomanyImages, PyAutoGuiForGEP
-
 import time
 from datetime import timedelta
 
@@ -30,7 +28,9 @@ class view():
         def slider_input():
             st.session_state['side'] = st.session_state['slider_side']
             st.session_state['area'] = st.session_state['slider_side']
-
+            
+        def show_error(str):
+            st.error(str)
 
         percent_404 = st.number_input("Select a percent of the 404 not found:", key='side', on_change = calc_area)
         st.slider('Select a percent of the 404 not found :', key='slider_side', on_change = slider_input)
@@ -58,7 +58,6 @@ class view():
 
                     pag = PyAutoGuiForGEP(json_path)
                     try:
-                        print('start!')
                         basetime = time.time()
                         pag.make_dir(pag.save_path)
                         pag.scene_name_time_define(pag.aoi_date, pag.save_path)
@@ -71,16 +70,13 @@ class view():
                         tm = time.time() - basetime
                         timestr = str(timedelta(seconds=tm))
                         st.success(f'Total time    {timestr.split(".")[0]}')
-                        print('completed!')
                         pag.exit_gep()
                     except ToomanyNotFound:
-                        print("Too many 404 Not Found... ")
-                        st.error("Too many 404 Not Found... ")
+                        show_error("Too many 404 Not Found... ")
                     except ToomanyImages:
-                        print("Too many Images... ")
-                        st.error("Too many Images... ")
+                        show_error("Too many Images... ")
                     except:
-                        print('download failed')
+                        show_error('Download Failed... Please Check Terminal')
                         pag.exit_gep()
                 else:
                     pass

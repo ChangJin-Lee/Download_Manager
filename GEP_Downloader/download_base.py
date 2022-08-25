@@ -4,9 +4,7 @@ import time
 import os
 import json
 from datetime import datetime, timedelta
-
 import pyautogui
-
 
 class ToomanyNotFound(BaseException):
     def __init__(self):
@@ -57,7 +55,6 @@ class Base:
         self.combine_path = f'{save_path}\\{self.scene_name}.geid'
         self.imagery_date = f'{date[:4]}-{date[4:6]}-{date[6:]}'
         dir_path = f'{save_path}\\{self.scene_name}'
-        # assert os.path.exists(dir_path) == False
         return dir_path
 
     @staticmethod
@@ -229,7 +226,6 @@ class PyAutoGuiForGEP(Base):
         pyautogui.click(400, 1054)
         time.sleep(1)
         pyautogui.click(1425, 228)
-
         pyautogui.click(459, 1049)
         time.sleep(1)
         pyautogui.click(1420, 272)

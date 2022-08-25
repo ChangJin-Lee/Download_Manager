@@ -3,7 +3,6 @@ import boto3
 from botocore.handlers import disable_signing
 import os
 from file_read_backwards import FileReadBackwards
-import calendar
 from datetime import datetime
 
 class view():
@@ -16,13 +15,10 @@ class view():
         ('All', '2020', '2021', '2022'))
 
         contents, totalsize, cnt = self.capella_size(option)
-
         st.subheader("summarize")
-
         st.write( "year :  " + str(option))
         st.write( "count : " + str(cnt))
         st.write( "totalsize : " + str(totalsize))
-
         st.subheader("samples")
 
         with st.container():
@@ -48,10 +44,8 @@ class view():
                 st.error("new data updated in aws s3... plaese download manualy")
 
     def capella_size(self,option):
-        sizes = 0
-        cnt = 0
-        objcontents = []
-
+        sizes, cnt, objcontents = 0, 0, []
+        
         if option == "All":
             option = ""
 
@@ -64,7 +58,6 @@ class view():
 
         resource = boto3.resource('s3')
         resource.meta.client.meta.events.register('choose-signer.s3.*', disable_signing)
-
         bucket = resource.Bucket('capella-open-data')
 
         for obj in bucket.objects.filter(Prefix='data/'+option):

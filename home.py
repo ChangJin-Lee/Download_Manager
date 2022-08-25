@@ -12,8 +12,7 @@ with st.sidebar:
         "icon": {"color": "orange", "font-size": "18px"}, 
         "nav-link": {"font-size": "14px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
         "nav-link-selected": {"background-color": "#02ab21"},
-    }
-    )
+    })
 
 if choose == "GEP Downloader":
     gep_downloader.view()
