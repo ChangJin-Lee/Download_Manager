@@ -72,7 +72,13 @@ Google Earth Pro, Capella open-data-set의 영상 데이터 다운로드를 자�
   <tr>
 </table>
 
+- We Select 4 polygon point, Although data has random polygon
 
+<table>
+  <tr>
+<td><img alt="" src="https://user-images.githubusercontent.com/54494793/186603459-e7b7d19b-7805-45e2-babd-5b77e9cf6e45.png" /></td>
+  <tr>
+</table>
 
 
 <br/>
