@@ -1,7 +1,7 @@
 # Download_Manager
 
 ## Introduce
-Google Earth Pro, Capella open-data-set의 영상 데이터 다운로드를 자동화하는 프로젝트 입니다. Streamlit으로 UI를 시각화 했습니다.
+Google Earth Pro, Capella open-data-set의 영상 데이터 다운로드를 자동화하는 프로젝트 입니다. Streamlit으로 UI를 시각화 했습니다. 각 메뉴를 클릭하면 내용을 볼 수 있습니다.
 
 <br/>
 
